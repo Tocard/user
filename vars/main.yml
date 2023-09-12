@@ -1,0 +1,3 @@
+---
+
+user_custom_become_method: "{% 'sudo' if 'Ubuntu' in ansible_distribution or 'Fedora' in ansible_distribution else 'su' %}"
